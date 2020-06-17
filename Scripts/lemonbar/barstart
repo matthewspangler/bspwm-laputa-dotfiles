@@ -1,0 +1,16 @@
+panel_bar < "$PANEL_FIFO" | lemonbar -a 12 \
+-g "$PANEL_WIDTH"x"$PANEL_HEIGHT"+"$PANEL_HORIZONTAL_OFFSET"+"$PANEL_VERTICAL_OFFSET" \
+-f "$PANEL_FONT" -F "$COLOR_DEFAULT_FG" -B "$COLOR_DEFAULT_BG" -n "$PANEL_WM_NAME" | bash &
+
+# Panel configurations
+PANEL_HEIGHT=24
+PANEL_WIDTH=866
+PANEL_HORIZONTAL_OFFSET=250
+PANEL_VERTICAL_OFFSET=8
+PANEL_FONT="-lucy-tewi-medium-r-normal-*-11-90-100-100-c-60-iso10646-1"
+PANEL_FIFO=/tmp/panel-fifo
+PANEL_WM_NAME=bspwm_panel
+
+~/Scripts/lemonbar/top_bar.py | lemonbar -B "$color0" -F "$color8" -U "$color8" -p -u 2 -d -a 12 \
+-g "$PANEL_WIDTH"x"$PANEL_HEIGHT"+"$PANEL_HORIZONTAL_OFFSET"+"$PANEL_VERTICAL_OFFSET" \
+-f "$PANEL_FONT" -n "$PANEL_WM_NAME" &
