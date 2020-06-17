@@ -3,4 +3,4 @@ BSPWM configuration files and custom rice, based on colors from a Laputa fan-art
 This configuration also depends on: rofi, lemonbar, pywal, and wpgtk.
 
 ## Screenshot:
-![Alt text](screenshot.jpg?raw=true "Screenshot")
+![Alt text](screenshot.png?raw=true "Screenshot")
